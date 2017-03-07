@@ -11,7 +11,7 @@ endfunction
 
 call s:initVariable("g:SLESlintChDirMode", 0)
 
-if g:NERDTreeChDirMode != 0
+if g:SLESlintChDirMode != 0
   let s:lcd = fnameescape(getcwd())
   silent! exec "lcd" expand('%:p:h')
 endif
