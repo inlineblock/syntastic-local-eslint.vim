@@ -8,7 +8,7 @@ Installation Instructions
 Vundles:
 
 ```
-Plugin 'eekfuh/syntastic-local-eslint.vim'
+Plugin 'inlineblock/syntastic-local-eslint.vim'
 ```
 
 Whats been added?
