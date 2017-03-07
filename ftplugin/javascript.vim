@@ -1,5 +1,14 @@
 " backup local cwd
 " and change it to the directory of the current file
+"
+function! s:initVariable(var, value)
+  if !exists(a:var)
+      exec 'let ' . a:var . ' = ' . "'" . substitute(a:value, "'", "''", "g") . "'"
+      return 1
+  endif
+  return 0
+endfunction
+
 call s:initVariable("g:SLESlintChDirMode", 0)
 
 if g:NERDTreeChDirMode != 0
