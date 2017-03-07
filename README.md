@@ -5,13 +5,17 @@ Prefer local repo install of eslint over global install with syntastic
 Installation Instructions
 -------------------------
 
-Using [vim plugged](https://github.com/junegunn/vim-plug) you just need to add:
+Vundles:
 
 ```
-Plug 'mtscout6/syntastic-local-eslint.vim'
+Plugin 'eekfuh/syntastic-local-eslint.vim'
 ```
 
-Inspired By
------------
+Whats been added?
+-----------------
 
-Inspired by http://blog.pixelastic.com/2015/10/05/use-local-eslint-in-syntastic/
+
+let g:SLESlintChDirMode = (0 | 1)
+0 = Dont change dir
+1 = Change dir
+

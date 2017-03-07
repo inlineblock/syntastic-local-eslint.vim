@@ -1,7 +1,11 @@
 " backup local cwd
 " and change it to the directory of the current file
-let s:lcd = fnameescape(getcwd())
-silent! exec "lcd" expand('%:p:h')
+call s:initVariable("g:SLESlintChDirMode", 0)
+
+if g:NERDTreeChDirMode != 0
+  let s:lcd = fnameescape(getcwd())
+  silent! exec "lcd" expand('%:p:h')
+endif
 
 " detect shell and choose the command to find the eslint executable
 if &shell =~# 'fish'
